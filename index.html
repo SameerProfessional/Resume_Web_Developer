@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameer Gautam - Resume</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Define a consistent font and default text style */
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* Standardized style for the resume container (mimics A4/Letter size on print) */
+        .resume-container {
+            max-width: 8.5in; /* Standard US letter width */
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Small, capitalized headings */
+        .section-heading {
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+            color: #1f2937; /* Gray 800 */
+            border-bottom: 2px solid #e5e7eb; /* Light gray border */
+            padding-bottom: 0.25rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        /* Ensure bullets and text are aligned */
+        ul {
+            padding-left: 1.25rem;
+            margin-bottom: 1rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Print optimization: Ensure columns stay together and remove unnecessary margins */
+        @media print {
+            .resume-container {
+                box-shadow: none;
+                max-width: 100%;
+            }
+            .no-print-margin {
+                margin: 0 !important;
+                padding: 0 !important;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 p-4 sm:p-8">
+
+    <div class="resume-container bg-white p-6 sm:p-8 lg:p-10 rounded-lg shadow-xl">
+
+        <!-- HEADER SECTION -->
+        <header class="text-center pb-2 border-b-4 border-gray-700">
+            <h1 class="text-3xl sm:text-4xl font-extrabold text-gray-800">Sameer Gautam</h1>
+            <p class="text-lg text-gray-600 mt-1 font-medium">DATA ENGINEER | FULL-STACK DEVELOPER</p>
+
+            <div class="flex flex-wrap justify-center text-sm text-gray-600 mt-2 space-x-2 sm:space-x-4">
+                <span>📍 Indore, India</span>
+                <span>|</span>
+                <span>📱 +91-7415985294</span>
+                <span>|</span>
+                <a href="mailto:singhgautamsameer@gmail.com" class="text-blue-600 hover:text-blue-800">✉️ singhgautamsameer@gmail.com</a>
+            </div>
+            <div class="flex flex-wrap justify-center text-sm text-gray-600 space-x-2 sm:space-x-4">
+                <a href="https://linkedin.com/in/sameergautam1204" target="_blank" class="text-blue-600 hover:text-blue-800">🔗 linkedin.com/in/sameergautam1204</a>
+                <span>|</span>
+                <a href="https://github.com/SAMEERSINGHGAUTAM" target="_blank" class="text-blue-600 hover:text-blue-800">💻 github.com/SAMEERSINGHGAUTAM</a>
+            </div>
+        </header>
+
+        <!-- MAIN CONTENT AREA - TWO COLUMNS on medium screens and up -->
+        <main class="lg:flex lg:space-x-8 mt-4">
+
+            <!-- COLUMN 1: Experience and Projects (Wider - 65%) -->
+            <section class="lg:w-8/12">
+                
+                <!-- PROFESSIONAL SUMMARY -->
+                <h2 class="section-heading">Professional Summary</h2>
+                <p class="text-sm text-gray-700 leading-relaxed">
+                    Adaptable and results-driven Software Engineer & Data Engineer with hands-on experience in MERN stack development (React.js, Node.js, MongoDB, Express.js) and robust backend systems (Spring Boot, REST APIs). Proven ability in designing scalable, clean, and efficient applications. Leveraging strong data engineering expertise in ETL pipelines, SQL optimization, and cloud-native workflows (AWS, Databricks). Passionate about building full-stack web applications and high-performance data solutions within Agile environments.
+                </p>
+
+                <!-- EXPERIENCE -->
+                <h2 class="section-heading">Experience</h2>
+
+                <div class="mb-4">
+                    <div class="flex justify-between items-start text-sm font-semibold">
+                        <h3 class="text-gray-900">Data Engineer Intern</h3>
+                        <p class="text-gray-500 whitespace-nowrap">May 2025 – Present</p>
+                    </div>
+                    <!-- Moved company name to a separate line to ensure no wrapping issues -->
+                    <p class="text-sm text-gray-600 italic mt-0.5">Startappss System India Pvt. Ltd., Indore</p>
+                    <ul class="list-disc text-sm text-gray-700 mt-1 no-print-margin">
+                        <li>Built and optimized ETL workflows for structured & unstructured datasets, enhancing data reliability.</li>
+                        <li>Enhanced complex SQL queries, achieving 25% faster execution for critical analytics workloads.</li>
+                        <li>Integrated multiple disparate data sources into dashboards, providing stakeholders with real-time insights.</li>
+                        <li>Applied backend engineering practices to develop validation and automation workflows for data quality assurance.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <div class="flex justify-between items-start text-sm font-semibold">
+                        <h3 class="text-gray-900">Java Development Intern</h3>
+                        <p class="text-gray-500 whitespace-nowrap">Sep 2024 – Mar 2025</p>
+                    </div>
+                    <!-- Moved company name to a separate line to ensure no wrapping issues -->
+                    <p class="text-sm text-gray-600 italic mt-0.5">Amstech Incorporation Pvt. Ltd., Indore</p>
+                    <ul class="list-disc text-sm text-gray-700 mt-1 no-print-margin">
+                        <li>Developed scalable backend features using Spring Boot and Core Java principles.</li>
+                        <li>Built and optimized REST APIs for seamless and efficient client-server communication.</li>
+                        <li>Managed backend persistence and retrieval using MongoDB and MySQL.</li>
+                        <li>Collaborated effectively with frontend teams, ensuring smooth end-to-end system integration.</li>
+                    </ul>
+                </div>
+
+                <!-- ACADEMIC PROJECTS -->
+                <h2 class="section-heading">Academic Projects</h2>
+
+                <div class="mb-3">
+                    <h3 class="text-sm font-semibold text-gray-900">MERN E-Office System <span class="text-gray-500 font-normal italic">(HackIndore Finalist)</span></h3>
+                    <ul class="list-disc text-xs text-gray-700 mt-1 no-print-margin">
+                        <li>Developed a digital workplace platform supporting 100+ concurrent users.</li>
+                        <li>Improved organizational workflow efficiency by 40% through streamlined features.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-3">
+                    <h3 class="text-sm font-semibold text-gray-900">Disaster Management Platform <span class="text-gray-500 font-normal italic">(NASA Space Apps Challenge 2024)</span></h3>
+                    <ul class="list-disc text-xs text-gray-700 mt-1 no-print-margin">
+                        <li>Delivered a real-time monitoring system covering 15+ disaster types utilizing NASA APIs.</li>
+                        <li>Reduced critical analysis time by 60% by providing immediate, actionable data.</li>
+                    </ul>
+                </div>
+                
+                <div class="mb-3">
+                    <h3 class="text-sm font-semibold text-gray-900">PhishShield – Cybersecurity Web App <span class="text-gray-500 font-normal italic">(Udaan 2024 Winner)</span></h3>
+                    <ul class="list-disc text-xs text-gray-700 mt-1 no-print-margin">
+                        <li>Achieved over 90% phishing detection accuracy using machine learning models.</li>
+                        <li>Successfully reduced malware risk by 30% for users in testing environments.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-3">
+                    <h3 class="text-sm font-semibold text-gray-900">Big Data Pipelines <span class="text-gray-500 font-normal italic">(PySpark, Kafka, Hadoop)</span></h3>
+                    <ul class="list-disc text-xs text-gray-700 mt-1 no-print-margin">
+                        <li>Developed robust batch and streaming data pipelines using distributed technologies.</li>
+                        <li>Optimized Spark jobs effectively through partitioning, caching, and customized joins.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-3">
+                    <h3 class="text-sm font-semibold text-gray-900">dbt Sales Analytics Project <span class="text-gray-500 font-normal italic">(dbt, SQL, Data Modeling)</span></h3>
+                    <ul class="list-disc text-xs text-gray-700 mt-1 no-print-margin">
+                        <li>Modeled raw customer and order data into analytics-ready marts using dbt (Data Build Tool).</li>
+                        <li>Implemented automated data quality tests to ensure high integrity of the final data models.</li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <!-- COLUMN 2: Skills, Education, Achievements (Narrower - 35%) -->
+            <section class="lg:w-4/12 border-t pt-4 lg:border-t-0 lg:pt-0">
+                
+                <!-- CORE SKILLS -->
+                <h2 class="section-heading mt-0 lg:mt-1.5">Core Skills</h2>
+                <div class="text-sm space-y-2">
+                    <p>
+                        <strong class="text-gray-900">Frontend:</strong> React.js, Redux, Tailwind CSS, JavaScript (ES6+)
+                    </p>
+                    <p>
+                        <strong class="text-gray-900">Backend:</strong> Node.js, Express.js, Spring Boot, REST APIs
+                    </p>
+                    <p>
+                        <strong class="text-gray-900">Databases:</strong> MongoDB, MySQL, PostgreSQL, SQLite
+                    </p>
+                    <p>
+                        <strong class="text-gray-900">Data Eng:</strong> Python, SQL, PySpark, Airflow, dbt, Kafka, Hadoop
+                    </p>
+                    <p>
+                        <strong class="text-gray-900">Cloud & Tools:</strong> Databricks, AWS (S3, Lambda), Docker, Power BI, Git
+                    </p>
+                </div>
+
+                <!-- EDUCATION -->
+                <h2 class="section-heading">Education</h2>
+                <div class="text-sm mb-4">
+                    <h3 class="font-semibold text-gray-900">B.Tech – Computer Science & Information Technology</h3>
+                    <p class="text-gray-700">IPS Academy Indore, 2025</p>
+                </div>
+
+                <!-- SCHOLASTIC ACHIEVEMENTS -->
+                <h2 class="section-heading">Scholastic Achievements</h2>
+                <ul class="list-disc text-sm text-gray-700 mt-1 no-print-margin">
+                    <li>🏆 Winner – Udaan 2024 Hackathon (PhishShield Cybersecurity App)</li>
+                    <li>🥈 Finalist – HackIndore 2024 (MERN E-Office System)</li>
+                    <li>🌍 Participant – NASA Space Apps Challenge 2024 (Disaster Management Platform)</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
